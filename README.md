@@ -1,4 +1,6 @@
-In the project directory, you can run:
+This project runs on NPM. Install Node and NPM if it is not already installed on your computer.
+
+Navigate to the project directory in the terminal and run:
 
 ### `npm install`
 
