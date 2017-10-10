@@ -1,0 +1,10 @@
+#Body {
+	padding:40px;
+}
+
+@media (min-width: 992px) {
+	#Body {
+		padding-right: 0;
+		overflow: auto;
+	}
+}

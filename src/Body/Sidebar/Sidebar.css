@@ -1,0 +1,86 @@
+#Sidebar {
+	width: 100%;
+	box-shadow: 0px 0px 5px #888;
+	text-decoration: black underline;
+}
+
+#Sidebar-dropdown {
+	border:none;
+	background-color: #fff;
+	font:inherit;
+	color: #fff;
+	padding: 40px;
+	width: 100%;
+	cursor: pointer;
+	position: relative;
+	background-color: #58585a;
+}
+
+@media (min-width: 992px) {
+	#Sidebar-dropdown {
+		display: none;
+	}
+}
+
+#Sidebar-menuIcon {
+	position: absolute;
+	right: 40px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@media (min-width: 992px) {
+	#Sidebar {
+		float: left;
+		width: 30%;
+	}
+}
+
+#Sidebar-list {
+	list-style: none;
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: none;
+	height: 400px;
+	overflow: scroll;
+}
+
+#Sidebar-list.show {
+	display: block;
+}
+
+@media (min-width: 992px) {
+	#Sidebar-list {
+		display: block;
+		height: auto;
+		overflow: auto;
+	}
+}
+
+.Sidebar-item {
+	padding: 20px 10px;
+	border-bottom: 2px solid #cccccc;
+	cursor: pointer;
+	text-align: center;
+	background-size: 0 0;
+	background-position: center;
+}
+
+.Sidebar-item.showBg {
+	background-size: cover;
+	color: #fff;
+	text-decoration: #fff underline;
+}
+
+@media (min-width: 992px) {
+	.Sidebar-item {
+		padding: 60px 35px;
+		text-align: left;
+	}
+}
+
+.Sidebar-item:last-of-type {
+	border-bottom: 0;
+}
